@@ -1,16 +1,12 @@
 @echo off
-set CURPATH=%~dp0
-
 pushd .
-cd "%CURPATH%"
-mkdir node_modules
+cd %~dp0
 call npm install mustache
-
 call npm install sqlite3
 call npm install terser
 call npm install uglify-js
 call npm install html-minifier
 call npm install clean-css
-
-npm install --save-dev electron
+call npm install --save-dev electron
+call npm install --save-dev electron-builder
 popd
