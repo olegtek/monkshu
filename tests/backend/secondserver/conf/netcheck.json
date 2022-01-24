@@ -1,4 +1,4 @@
 {
     "netcheck_frequency": 1000,
-    "netcheck_host": "192.168.10.85:22"
+    "netcheck_host": "192.168.0.108:22"
 }

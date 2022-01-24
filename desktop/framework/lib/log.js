@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const ffs = require(`${CONSTANTS.LIBDIR}/FastFileWriter.js`);
 
-const log_conf = {"debug": false, "max_log_line": 1024, "max_log_mb": 100, "closeTimeOut": 30000, "sync_log": true};
+const log_conf = {"debug": true, "max_log_line": 1024, "max_log_mb": 100, "closeTimeOut": 30000, "sync_log": true};
 const logQueue = []; let pendingWrites = false;	// queueing mechanism for synchronous logging, eats memory potentially
 
 function initGlobalLoggerSync(logPath) {
