@@ -24,7 +24,7 @@ const menuTemplate = [
 
 function _getMainAppPath() {
 	const entries = fs.readdirSync(`${CONSTANTS.ROOTDIR}/../app/`);
-	const res = path.resolve(`${CONSTANTS.ROOTDIR}/../app/${entries[0]}`;
+	const res = path.resolve(`${CONSTANTS.ROOTDIR}/../app/${entries[0]}`);
 	LOG.debug(`_getMainAppPath: ${res}`);
 	return res;
 }
